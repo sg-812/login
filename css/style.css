@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+
+:root{
+    --orange: rgb(251, 99, 37);
+    --blur_orange: rgba(251, 99, 37,0.2);
+}
+
+@font-face {
+    font-family: dancing;
+    src: url('../font/dancing_script/DancingScript-VariableFont_wght.ttf');
+}
+
+*{
+    /* background-color: aqua; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'dancing',cursive;
+}
+body{
+    height:80vh;
+    background: linear-gradient(to left,var(--blur_orange),var(--blur_orange)),url('../images/ocean.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    /* background-position: 10% 0%; */
+}
+.main{
+    width:35%;
+    background-color: rgba(0,0,0,0.5);
+    margin:110px auto;
+    padding:45px 35px;
+    border-radius: 10px;
+}
+.main h1{
+    text-align: center;
+    color:white;
+    margin-bottom: 35px;
+    text-transform: capitalize;
+    font-family: 'Protest Guerrilla', sans-serif;
+    letter-spacing: 10px;
+}
+input[type='email'],input[type='password'],input[type='submit']{
+   display:block;
+   width:100%;
+   height:35px;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   border: none;
+   text-indent: 10px;
+}
+
+.check{
+    margin-bottom: 20px;
+}
+.check label{
+    color:white;
+}
+input[type='checkbox']{
+    accent-color: grey;
+}
+
+input[type='submit']{
+    background-color: var(--orange);
+    color:white;
+    text-indent: 0;   
+}
+a{
+    color:grey;    
+}
